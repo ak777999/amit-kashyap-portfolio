@@ -1,0 +1,580 @@
+<!doctype html>
+<!--
+  Amit Kashyap · graphic design portfolio. Built with scroll-craft, gallery grammar.
+  Every image is Amit's own work: his Canva site (amitkashyap.my.canva.site),
+  thumbnails from his Canva account (read-only), and the Lotus puff brand files.
+  Labels use the artwork's own headline. No clients, results or numbers are
+  claimed beyond what his CV and files state. Anything missing is marked TBC.
+  Generated from src/gen.py + src/page.html + src/catalogue.py.
+-->
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amit Kashyap · Graphic Designer, Ludhiana</title>
+<meta name="description" content="Amit Kashyap is a graphic and web UI designer in Ludhiana, India: brand identities, packaging, social and ad creatives, posters, and web UI.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%232337FF'/><rect x='7' y='7' width='8' height='18' fill='%23ECEBE7'/><rect x='17' y='7' width='8' height='8' fill='%23ECEBE7'/></svg>">
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="scrollcraft.css">
+<style>
+  @font-face { font-family: "Bricolage Grotesque"; font-weight: 200 800; font-stretch: 75% 100%; font-display: swap;
+    src: url(assets/fonts/bricolage-grotesque-latin-standard-normal.woff2) format("woff2"); }
+  @font-face { font-family: "IBM Plex Mono"; font-weight: 400; font-display: swap; src: url(assets/fonts/ibm-plex-mono-latin-400-normal.woff2) format("woff2"); }
+  @font-face { font-family: "IBM Plex Mono"; font-weight: 500; font-display: swap; src: url(assets/fonts/ibm-plex-mono-latin-500-normal.woff2) format("woff2"); }
+
+  :root {
+    --sc-canvas:     #ECEBE7;
+    --sc-surface:    #FFFFFF;
+    --sc-ink:        #0D0D0D;
+    --sc-ink-soft:   #4A4A47;
+    --sc-accent:     #2337FF;
+    --sc-accent-ink: #FFFFFF;
+    --sc-font-display: "Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+    --sc-font-text:    "Bricolage Grotesque", system-ui, sans-serif;
+    --sc-font-mono:    "IBM Plex Mono", ui-monospace, monospace;
+    --ap-night: #0D0D0D;
+    --ap-bone:  #ECEBE7;
+    --ap-gut: clamp(16px, 3.4vw, 52px);
+  }
+  html { background: var(--sc-canvas); }
+  body { overflow-x: clip; color: var(--sc-ink); font-family: var(--sc-font-text); font-stretch: 100%; }
+  .sc-display { font-stretch: 75%; font-weight: 760; letter-spacing: -0.025em; }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--sc-accent); outline-offset: 3px; }
+
+  /* ------------------------------------------------------------- labels -- */
+  .lbl { display: grid; gap: 1px; margin-top: 10px; font: 400 11.5px/1.45 var(--sc-font-mono); letter-spacing: 0.01em; color: var(--sc-ink-soft); }
+  .lbl__no { color: var(--sc-ink); font-weight: 500; }
+  .lbl__t { color: var(--sc-ink); font-family: var(--sc-font-text); font-size: 14px; font-weight: 560; letter-spacing: -0.005em; line-height: 1.3; }
+  .tile { margin: 0; min-width: 0; }
+  .tile__frame { all: unset; display: block; width: 100%; cursor: zoom-in; position: relative; background: #fff;
+    box-shadow: 0 1px 1px rgba(13,13,13,.06), 0 10px 24px -14px rgba(13,13,13,.28); transition: transform .35s cubic-bezier(.2,.7,.2,1); }
+  .tile__frame:focus-visible { outline: 2px solid var(--sc-accent); outline-offset: 3px; }
+  .tile__frame img { display: block; width: 100%; height: auto; }
+  .tile__frame[data-fit="contain"] { aspect-ratio: 1; display: grid; place-items: center; }
+  .tile__frame[data-fit="contain"] img { width: 82%; height: 82%; object-fit: contain; }
+
+  /* ---------------------------------------------------------------- index -- */
+  .ix { position: fixed; z-index: 60; left: 50%; bottom: max(14px, env(safe-area-inset-bottom)); transform: translateX(-50%);
+    display: flex; align-items: center; gap: 4px; padding: 5px; background: var(--ap-night); color: var(--ap-bone);
+    border: 1px solid rgba(236,235,231,.16); border-radius: 999px; max-width: calc(100vw - 20px); }
+  .ix__name { font: 640 14px/1 var(--sc-font-text); text-decoration: none; padding: 10px 14px 10px 12px; white-space: nowrap; }
+  .ix ol { list-style: none; margin: 0; padding: 0; display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
+  .ix ol::-webkit-scrollbar { display: none; }
+  .ix a.ix__l { display: block; font: 500 11.5px/1 var(--sc-font-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: none;
+    padding: 11px 12px; border-radius: 999px; white-space: nowrap; color: #CFCDC6; transition: background-color .25s, color .25s; }
+  .ix a.ix__l:hover { color: #fff; }
+  .ix a.ix__l[aria-current="true"] { background: var(--sc-accent); color: #fff; }
+
+  /* ----------------------------------------------------------------- wall -- */
+  .wall { display: grid; grid-template-columns: minmax(330px, 31vw) 1fr; height: 116vh; overflow: clip; position: relative; }
+  .wall__plate { padding: 8vh var(--ap-gut) 0; display: flex; flex-direction: column; gap: 22px; position: relative; z-index: 2; }
+  .wall__name { font-size: clamp(3.4rem, 6.6vw, 8.6rem); line-height: .86; margin: 0; letter-spacing: -0.035em; color: var(--sc-ink); }
+  .wall__name > span { display: block; white-space: nowrap; }
+  .wall__name .ac { color: var(--sc-accent); }
+  .wall__role { margin: 0; font: 600 clamp(1.15rem, 1.4vw, 1.4rem)/1.2 var(--sc-font-text); color: var(--sc-ink); }
+  .wall__plate .sc-body { color: var(--sc-ink-soft); max-width: 34ch; }
+  .facts { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; font: 400 12px/1.5 var(--sc-font-mono); border-top: 1px solid var(--sc-ink); padding-top: 14px; max-width: 420px; }
+  .facts dt { color: var(--sc-ink-soft); text-transform: uppercase; letter-spacing: .04em; }
+  .facts dd { margin: 0; color: var(--sc-ink); }
+  .mail { font: 600 clamp(1rem, 1.25vw, 1.2rem)/1.2 var(--sc-font-text); color: var(--sc-ink); text-decoration-thickness: 2px; text-underline-offset: 5px; text-decoration-color: var(--sc-accent); width: max-content; max-width: 100%; overflow-wrap: anywhere; }
+  .wall__hang { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(14px, 1.6vw, 26px); padding-right: var(--ap-gut); margin-top: -4vh; align-items: start; }
+  .wall__col { display: grid; gap: clamp(22px, 2.6vw, 40px); will-change: transform; }
+  .wall__col--2 { padding-top: 16vh; } .wall__col--3 { padding-top: 6vh; } .wall__col--4 { padding-top: 24vh; }
+  .wall::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 16vh; background: linear-gradient(transparent, var(--sc-canvas)); pointer-events: none; z-index: 3; }
+
+  /* ---------------------------------------------------------- lotus puff -- */
+  .feat { background: #fff; padding: clamp(80px, 14vh, 150px) var(--ap-gut) clamp(80px, 12vh, 130px); position: relative; z-index: 2; }
+  .feat__grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: clamp(16px, 2vw, 32px); align-items: end; }
+  .feat__media { grid-column: 1 / 8; margin: 0; }
+  .feat__img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 62%; }
+  .feat__label { grid-column: 8 / 13; display: grid; gap: 22px; padding-bottom: 6px; }
+  .feat__label h2 { margin: 0; font-size: clamp(3.4rem, 7vw, 8rem); line-height: .86; color: var(--sc-ink); }
+  .feat__label .facts { max-width: none; }
+  .feat__logo { display: block; width: min(300px, 70%); height: auto; padding: 12.4% 0; }
+  .feat__strip { display: grid; grid-template-columns: 1fr 1fr 2.2fr .62fr; gap: clamp(14px, 1.8vw, 28px); margin-top: clamp(28px, 5vh, 56px); align-items: end; }
+  .tile--site .tile__frame, .tile--phone .tile__frame { background: #0D0D0D; padding: 10px; }
+  .tile--phone .tile__frame { border-radius: 22px; padding: 7px; }
+  .tile--phone .tile__frame img { border-radius: 16px; }
+  .tile--site .tile__frame { border-radius: 10px; padding: 24px 8px 8px; }
+  .tile--site .tile__frame::before { content: ""; position: absolute; top: 9px; left: 12px; width: 34px; height: 7px;
+    background: radial-gradient(circle at 3.5px 3.5px, #555 3px, transparent 3.5px) 0 0 / 13px 7px repeat-x; }
+
+  /* ----------------------------------------------------------------- sort -- */
+  #sort [data-sc-stage] { background: var(--ap-night); color: var(--ap-bone); }
+  .sort__head { position: absolute; left: var(--ap-gut); top: 9vh; z-index: 40; max-width: 760px; pointer-events: none; }
+  .sort__head > * { position: absolute; left: 0; top: 0; width: min(760px, 86vw); margin: 0; }
+  .sort__head h2 { font-size: clamp(2.6rem, 5.6vw, 6.4rem); line-height: .9; color: var(--ap-bone); }
+  .sort__head .sort__sub { margin-top: 12px; font: 400 13px/1.5 var(--sc-font-mono); color: #B5B3AC; }
+  .sort__head .sc-display { color: var(--ap-bone); }
+  .sort__pile { font-size: clamp(2rem, 3.6vw, 3.8rem); line-height: .95; }
+  .st { position: absolute; left: 0; top: 0; transform-origin: 50% 50%; will-change: transform; background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.35), 0 18px 34px -16px rgba(0,0,0,.6); }
+  .st img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .st--plate img { object-fit: contain; padding: 10%; }
+  .sg { position: absolute; left: 0; top: 0; z-index: 35; color: var(--ap-bone); text-decoration: none; opacity: 0; display: block;
+    height: calc(var(--hh) + 3 * var(--cell) + 2 * var(--gi)); }
+  .sg__name { display: block; font: 500 12px/1 var(--sc-font-mono); text-transform: uppercase; letter-spacing: .05em;
+    border-top: 1px solid rgba(236,235,231,.5); padding-top: 10px; }
+  .sg__n { position: absolute; left: calc(var(--cell) + var(--gi)); top: calc(var(--hh) + 2 * (var(--cell) + var(--gi))); width: var(--cell); height: var(--cell);
+    display: grid; place-items: center; font: 760 calc(var(--cell) * .62)/1 var(--sc-font-display); font-stretch: 75%; color: var(--sc-accent);
+    border: 1px solid rgba(236,235,231,.22); }
+  .sg:hover .sg__name, .sg:focus-visible .sg__name { color: #fff; border-top-color: var(--sc-accent); }
+
+  /* ---------------------------------------------------------------- rooms -- */
+  .rooms { padding: clamp(72px, 11vh, 120px) var(--ap-gut) clamp(56px, 8vh, 96px); display: grid; gap: clamp(56px, 9vh, 96px); }
+  .room__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; gap: 24px; border-bottom: 1px solid var(--sc-ink); padding-bottom: 14px; margin-bottom: clamp(20px, 3vh, 32px); }
+  .room__head h2 { margin: 0; font-size: clamp(2.6rem, 6vw, 6.6rem); line-height: .86; color: var(--sc-ink); }
+  .room__note { margin: 0; justify-self: end; max-width: 40ch; font: 400 13px/1.5 var(--sc-font-mono); color: var(--sc-ink-soft); text-align: right; }
+  .grid { display: grid; gap: clamp(14px, 1.8vw, 28px); align-items: start; }
+  .grid--ident { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .grid--pack { grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr; }
+  .grid--pack .tile__frame { aspect-ratio: 1.5; overflow: hidden; }
+  .grid--pack .tile:last-child .tile__frame { aspect-ratio: 1; }
+  .grid--pack .tile__frame img { height: 100%; object-fit: cover; }
+  .grid--social { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+
+  /* ----------------------------------------------------------------- rail -- */
+  #posters [data-sc-stage] { background: var(--sc-accent); color: #fff; }
+  .rail { --rh: 48vh; display: flex; align-items: flex-end; gap: clamp(20px, 2.4vw, 40px); height: 100%; padding: 0 var(--ap-gut) 17vh; width: max-content; }
+  .rail__lead { width: clamp(280px, 30vw, 460px); flex: none; align-self: center; display: grid; gap: 18px; color: #fff; }
+  .rail__lead h2 { margin: 0; font-size: clamp(3rem, 6vw, 6.8rem); line-height: .86; color: #fff; }
+  .rail__lead p { margin: 0; font: 400 13px/1.55 var(--sc-font-mono); color: #E4E7FF; max-width: 34ch; }
+  .tile--rail { flex: none; width: calc(var(--rh) * var(--ar)); }
+  .tile--rail .tile__frame img { height: var(--rh); width: 100%; object-fit: cover; }
+  .tile--rail.tile--fest { width: calc(var(--rh) * .78 * var(--ar)); }
+  .tile--rail.tile--fest .tile__frame img { height: calc(var(--rh) * .78); }
+  .tile--rail .lbl, .tile--rail .lbl__no, .tile--rail .lbl__t { color: #fff; }
+  .tile--rail .lbl { color: #E4E7FF; }
+  .tile--rail .tile__frame { box-shadow: 0 2px 3px rgba(0,0,30,.25), 0 24px 40px -20px rgba(0,0,40,.55); }
+  .rail__card { flex: none; width: clamp(200px, 18vw, 280px); align-self: flex-end; border-top: 1px solid rgba(255,255,255,.7); padding-top: 12px; margin-bottom: 70px; }
+  .rail__kicker { margin: 0 0 10px; font: 760 clamp(2rem, 3.2vw, 3.2rem)/.9 var(--sc-font-display); font-stretch: 75%; color: #fff; }
+  .rail__note { margin: 0; font: 400 12.5px/1.5 var(--sc-font-mono); color: #E4E7FF; }
+
+  /* -------------------------------------------------------------- screens -- */
+  .screens { background: #fff; padding: clamp(72px, 11vh, 120px) var(--ap-gut) clamp(72px, 10vh, 110px); display: grid; gap: clamp(48px, 7vh, 80px); position: relative; z-index: 2; }
+  .grid--screens { grid-template-columns: repeat(12, minmax(0, 1fr)); align-items: end; }
+  .grid--screens .tile--banner:nth-child(1) { grid-column: 1 / 7; }
+  .grid--screens .tile--banner:nth-child(2) { grid-column: 7 / 13; }
+  .grid--screens .tile--site { grid-column: 1 / 7; }
+  .grid--screens .tile--phone { grid-column: 7 / 9; }
+  .tbcs { grid-column: 9 / 13; display: grid; gap: clamp(14px, 1.8vw, 28px); align-self: stretch; }
+  .tbc { border: 1.5px dashed #8C8A84; display: grid; align-content: space-between; gap: 18px; padding: 18px; min-height: 160px; background: repeating-linear-gradient(135deg, transparent 0 14px, rgba(13,13,13,.035) 14px 15px); }
+  .tbc__tag { justify-self: start; font: 500 11px/1 var(--sc-font-mono); letter-spacing: .06em; text-transform: uppercase; background: var(--sc-ink); color: #fff; padding: 6px 8px; }
+  .tbc .lbl { margin: 0; }
+  .screens > *, .rooms > * { min-width: 0; }
+  .grid--em { grid-template-columns: repeat(9, minmax(0, 1fr)); align-items: end; }
+  .grid--em .lbl__m, .grid--em .lbl > span:last-child { font-size: 10.5px; }
+  .reel { margin: 0; }
+  .reel__frame { position: relative; background: #0D0D0D; border-radius: 16px; padding: 5px; aspect-ratio: 9 / 16; }
+  .reel__frame video { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 15px; background: #222; }
+  .reel__play { position: absolute; inset: 6px; border: 0; background: transparent; cursor: pointer; border-radius: 15px; }
+  .reel__play::after { content: ""; position: absolute; right: 14px; bottom: 14px; width: 34px; height: 34px; border-radius: 50%;
+    background: rgba(255,255,255,.92) url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M8 5v14l11-7z' fill='%230D0D0D'/></svg>") center / 18px no-repeat; transition: opacity .25s; }
+  .reel.is-playing .reel__play::after { background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M7 5h4v14H7zM13 5h4v14h-4z' fill='%230D0D0D'/></svg>"); opacity: .0; }
+  .reel.is-playing:hover .reel__play::after, .reel.is-playing .reel__play:focus-visible::after { opacity: 1; }
+  .sub__h { display: flex; justify-content: space-between; align-items: end; gap: 20px; border-bottom: 1px solid var(--sc-ink); padding-bottom: 12px; margin-bottom: clamp(18px, 3vh, 28px); }
+  .sub__h h3 { margin: 0; font: 760 clamp(1.8rem, 3vw, 3rem)/.9 var(--sc-font-display); font-stretch: 75%; letter-spacing: -0.02em; color: var(--sc-ink); }
+  .sub__h p { margin: 0; font: 400 12.5px/1.5 var(--sc-font-mono); color: var(--sc-ink-soft); text-align: right; max-width: 44ch; }
+
+  /* ---------------------------------------------------------------- close -- */
+  .close { background: var(--ap-night); color: var(--ap-bone); padding: clamp(80px, 12vh, 130px) var(--ap-gut) 110px; min-height: 100svh; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: clamp(20px, 3vw, 48px); align-content: start; position: relative; z-index: 2; }
+  .close a { color: var(--ap-bone); }
+  .ask { grid-column: 1 / 8; margin: 0; position: sticky; top: 10vh; align-self: start; }
+  .ask__frame { border: 1.5px dashed rgba(236,235,231,.55); aspect-ratio: 16 / 10; display: grid; align-content: space-between; padding: clamp(20px, 3vw, 44px); }
+  .ask__frame h2 { margin: 0; font-size: clamp(3rem, 7.2vw, 8.4rem); line-height: .86; color: var(--ap-bone); }
+  .ask__mail { font: 620 clamp(1.15rem, 2.2vw, 2.1rem)/1.15 var(--sc-font-text); text-decoration-thickness: 2px; text-underline-offset: 7px; text-decoration-color: var(--sc-accent); overflow-wrap: anywhere; }
+  .ask__row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+  .copy { all: unset; cursor: pointer; font: 500 11.5px/1 var(--sc-font-mono); text-transform: uppercase; letter-spacing: .05em; padding: 11px 14px; border: 1px solid rgba(236,235,231,.5); border-radius: 999px; color: var(--ap-bone); }
+  .copy:hover { background: var(--ap-bone); color: var(--ap-night); }
+  .copy:focus-visible { outline: 2px solid var(--sc-accent); outline-offset: 3px; }
+  .close .lbl, .close .lbl__no, .close .lbl__t { color: var(--ap-bone); }
+  .close .lbl { color: #B5B3AC; }
+  .maker { grid-column: 9 / 13; display: grid; gap: 22px; align-content: start; }
+  .maker h2 { margin: 0; font-size: clamp(2.2rem, 3.6vw, 3.8rem); line-height: .9; color: var(--ap-bone); }
+  .maker p { margin: 0; color: #CFCDC6; font-size: 15.5px; line-height: 1.6; max-width: 46ch; }
+  .maker .facts { border-top-color: rgba(236,235,231,.6); max-width: none; }
+  .maker .facts dt { color: #A9A7A0; }
+  .maker .facts dd { color: var(--ap-bone); }
+  .xp { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; font: 400 12px/1.45 var(--sc-font-mono); }
+  .xp li { display: grid; grid-template-columns: 1fr auto; gap: 2px 14px; padding: 9px 0; border-top: 1px solid rgba(236,235,231,.18); }
+  .xp b { font-weight: 500; color: var(--ap-bone); }
+  .xp span { color: #A9A7A0; }
+  .xp i { font-style: normal; color: #A9A7A0; grid-column: 1 / -1; }
+  .portrait { border: 1.5px dashed rgba(236,235,231,.4); min-height: 88px; display: grid; place-items: center; font: 500 11px/1.4 var(--sc-font-mono); text-transform: uppercase; letter-spacing: .06em; color: #B5B3AC; text-align: center; padding: 12px; }
+  .foot { grid-column: 1 / -1; margin-top: clamp(30px, 6vh, 70px); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; font: 400 11.5px/1.5 var(--sc-font-mono); color: #A9A7A0; border-top: 1px solid rgba(236,235,231,.18); padding-top: 16px; }
+
+  /* ------------------------------------------------------------- lightbox -- */
+  .lb { border: 0; padding: 0; background: transparent; max-width: 100vw; max-height: 100vh; width: 100vw; height: 100vh; margin: 0; }
+  .lb::backdrop { background: rgba(13,13,13,.92); }
+  .lb[open] { display: grid; place-items: center; }
+  .lb figure { margin: 0; display: grid; gap: 14px; justify-items: start; max-width: 92vw; }
+  .lb img { display: block; max-width: 92vw; max-height: 78vh; width: auto; height: auto; background: #fff; }
+  .lb .lbl, .lb .lbl__no, .lb .lbl__t { color: #fff; } .lb .lbl { color: #CFCDC6; margin: 0; }
+  .lb__x { all: unset; position: fixed; top: 16px; right: 16px; cursor: pointer; color: #fff; font: 500 12px/1 var(--sc-font-mono); text-transform: uppercase; letter-spacing: .05em; padding: 12px 16px; border: 1px solid rgba(255,255,255,.5); border-radius: 999px; }
+  .lb__x:focus-visible { outline: 2px solid var(--sc-accent); outline-offset: 3px; }
+
+  /* --------------------------------------------------------------- mobile -- */
+  @media (max-width: 760px) {
+    .ix__name { display: none; }
+    .ix { left: 10px; right: 10px; transform: none; max-width: none; }
+    .ix a.ix__l { padding: 13px 11px; }
+    .wall { grid-template-columns: 1fr; height: auto; }
+    .wall__plate { padding: 9vh 20px 34px; gap: 18px; }
+    .wall__name { font-size: 21vw; }
+    .wall__hang { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 0 20px; margin-top: 0; max-height: 118svh; overflow: hidden; gap: 14px; }
+    .wall__col--3, .wall__col--4 { display: none; }
+    .wall__col--2 { padding-top: 10vh; }
+    .feat__grid, .feat__strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .feat__media, .feat__label { grid-column: 1 / -1; }
+    .feat__strip .tile--site { grid-column: 1 / -1; order: 3; }
+    .feat__strip .tile--phone { order: 4; }
+    .sort__head { top: 7vh; }
+    .sort__head h2 { font-size: 13vw; }
+    .room__head { grid-template-columns: 1fr; }
+    .room__note { justify-self: start; text-align: left; }
+    .grid--ident, .grid--social { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid--ident .tile:last-child:nth-child(odd) { grid-column: 1 / -1; }
+    .grid--pack { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid--pack .tile__frame, .grid--pack .tile:last-child .tile__frame { aspect-ratio: 1; }
+    .rail { --rh: 50svh; padding-bottom: 19svh; }
+    .rail__lead { width: 76vw; }
+    .grid--screens { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid--screens > * { grid-column: 1 / -1 !important; }
+    .grid--screens .tile--phone { grid-column: 1 / 2 !important; max-width: 46vw; }
+    .grid--screens .tbcs { grid-column: 2 / 3 !important; }
+    .grid--em { grid-template-columns: repeat(9, 44vw); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; margin-right: calc(-1 * var(--ap-gut)); }
+    .grid--em > * { scroll-snap-align: start; }
+    .sub__h { flex-direction: column; align-items: start; }
+    .sub__h p { text-align: left; }
+    .close { grid-template-columns: 1fr; padding-bottom: 130px; }
+    .ask, .maker { grid-column: 1 / -1; }
+    .ask { position: static; }
+    .ask__frame { aspect-ratio: auto; min-height: 62svh; gap: 28px; }
+  }
+
+  /* ------------------------------------------------------- reduced motion -- */
+  .ap-reduce [data-sc-act="pin"], .ap-reduce [data-sc-act="pan"] { height: auto !important; }
+  .ap-reduce [data-sc-act] [data-sc-stage] { position: relative; }
+  .ap-reduce [data-sc-cue] { opacity: 1 !important; transform: none !important; pointer-events: auto !important; }
+  .ap-reduce .sort__pile { display: none; }
+  .ap-reduce #posters [data-sc-stage] { height: auto; overflow: visible; padding: 14vh 0 140px; }
+  .ap-reduce .rail { flex-wrap: wrap; width: auto; height: auto; padding: 0 var(--ap-gut); row-gap: 48px; align-items: flex-end; }
+  .ap-reduce .rail__lead { width: 100%; }
+  .ap-reduce .tile--rail { max-width: 100%; }
+  .ap-reduce .wall { height: auto; }
+  @media (prefers-reduced-motion: reduce) { .tile__frame, .ix a.ix__l { transition: none; } }
+</style>
+</head>
+<body>
+
+<nav class="ix" aria-label="Collection index">
+  <a class="ix__name" href="#wall">Amit Kashyap</a>
+  <ol>
+    <li><a class="ix__l" href="#lotus-puff">Lotus puff</a></li>
+    <li><a class="ix__l" href="#identity">Identity</a></li>
+    <li><a class="ix__l" href="#packaging">Packaging</a></li>
+    <li><a class="ix__l" href="#social">Social</a></li>
+    <li><a class="ix__l" href="#posters">Posters</a></li>
+    <li><a class="ix__l" href="#screens">Screens</a></li>
+    <li><a class="ix__l" href="#inquire">Inquire</a></li>
+  </ol>
+</nav>
+
+<main>
+  <!-- 1 · THE WALL. The collection starts at the top: work first, the maker's
+       label beside it. Columns hang at different rates, so scrolling walks
+       past them. -->
+  <section id="wall" class="wall" data-sc-act="flow" data-room="wall" aria-label="Selected work">
+    <div class="wall__plate">
+      <h1 class="sc-display wall__name"><span>Amit</span><span>Kashyap<span class="ac">.</span></span></h1>
+      <p class="wall__role">Graphic &amp; Web UI Designer</p>
+      <p class="sc-body">Brand identities, packaging, social and ad creatives, posters. Web UI on the side.</p>
+      <dl class="facts">
+        <dt>Based</dt><dd>Ludhiana, India</dd>
+        <dt>Practice</dt><dd>4+ years</dd>
+        <dt>Tools</dt><dd>Photoshop, Illustrator, Figma, Canva, AI tools</dd>
+        <dt>Latest</dt><dd>GrizonTech, remote, Aug 2024 to Dec 2025</dd>
+      </dl>
+      <a class="mail" href="mailto:amitkashyap777999@gmail.com">amitkashyap777999@gmail.com</a>
+    </div>
+    <div class="wall__hang"><div class="wall__col wall__col--1" data-sc-parallax="-1.6"><figure class="tile" style="--ar:0.5627"><button class="tile__frame" type="button" data-lb="po-royal" aria-label="Open No. 027, Something Royal"><img src="assets/work/po-royal.webp" width="619" height="1100" alt="Something Royal, poster"></button><figcaption class="lbl"><span class="lbl__no">No. 027</span><span class="lbl__t">Something Royal</span><span class="lbl__m">Poster. Story, 9:16.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="logo-horizon" aria-label="Open No. 001, Horizon Demolition &amp; Construction"><img src="assets/work/logo-horizon.webp" width="800" height="800" alt="Horizon Demolition &amp; Construction, logo"></button><figcaption class="lbl"><span class="lbl__no">No. 001</span><span class="lbl__t">Horizon Demolition &amp; Construction</span><span class="lbl__m">Logo. Mark.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="so-canada" aria-label="Open No. 016, Trusted experts for Canadian immigration"><img src="assets/work/so-canada.webp" width="800" height="800" alt="Trusted experts for Canadian immigration, social"></button><figcaption class="lbl"><span class="lbl__no">No. 016</span><span class="lbl__t">Trusted experts for Canadian immigration</span><span class="lbl__m">Social. Square.</span></figcaption></figure><figure class="tile" style="--ar:0.6345"><button class="tile__frame" type="button" data-lb="ev-03" aria-label="Open No. 048, Epitome × Indesa, 23 March"><img src="assets/work/ev-03.webp" width="698" height="1100" alt="Epitome × Indesa, 23 March, event creative"></button><figcaption class="lbl"><span class="lbl__no">No. 048</span><span class="lbl__t">Epitome × Indesa, 23 March</span><span class="lbl__m">Event creative. Story, 9:16.</span></figcaption></figure></div><div class="wall__col wall__col--2" data-sc-parallax="0.9"><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="lp-slate" aria-label="Open No. 012, Lotus puff tube on slate"><img src="assets/work/lp-slate.webp" width="1080" height="1080" alt="Lotus puff tube on slate, packaging"></button><figcaption class="lbl"><span class="lbl__no">No. 012</span><span class="lbl__t">Lotus puff tube on slate</span><span class="lbl__m">Packaging. Square.</span></figcaption></figure><figure class="tile" style="--ar:0.5627"><button class="tile__frame" type="button" data-lb="po-jain" aria-label="Open No. 028, Snacks that make IPL more interesting"><img src="assets/work/po-jain.webp" width="619" height="1100" alt="Snacks that make IPL more interesting, ad creative"></button><figcaption class="lbl"><span class="lbl__no">No. 028</span><span class="lbl__t">Snacks that make IPL more interesting</span><span class="lbl__m">Ad creative. Story, 9:16.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="tt-mark" aria-label="Open No. 004, A Tasty Twist, King of Special Samosa"><img src="assets/work/tt-mark.webp" width="1100" height="1100" alt="A Tasty Twist, King of Special Samosa, brand mark"></button><figcaption class="lbl"><span class="lbl__no">No. 004</span><span class="lbl__t">A Tasty Twist, King of Special Samosa</span><span class="lbl__m">Brand mark. Mark.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="so-australia" aria-label="Open No. 017, Your dream to study in Australia"><img src="assets/work/so-australia.webp" width="800" height="800" alt="Your dream to study in Australia, social"></button><figcaption class="lbl"><span class="lbl__no">No. 017</span><span class="lbl__t">Your dream to study in Australia</span><span class="lbl__m">Social. Square.</span></figcaption></figure></div><div class="wall__col wall__col--3" data-sc-parallax="-0.7"><figure class="tile" style="--ar:0.8000"><button class="tile__frame" type="button" data-lb="po-baisakhi" aria-label="Open No. 026, Happy Baisakhi"><img src="assets/work/po-baisakhi.webp" width="880" height="1100" alt="Happy Baisakhi, poster"></button><figcaption class="lbl"><span class="lbl__no">No. 026</span><span class="lbl__t">Happy Baisakhi</span><span class="lbl__m">Poster. Portrait, 4:5.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="so-roots" aria-label="Open No. 015, Roots across borders"><img src="assets/work/so-roots.webp" width="800" height="800" alt="Roots across borders, social"></button><figcaption class="lbl"><span class="lbl__no">No. 015</span><span class="lbl__t">Roots across borders</span><span class="lbl__m">Social. Square.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="logo-examsdojo" aria-label="Open No. 003, Exams Dojo"><img src="assets/work/logo-examsdojo.webp" width="800" height="800" alt="Exams Dojo, logo"></button><figcaption class="lbl"><span class="lbl__no">No. 003</span><span class="lbl__t">Exams Dojo</span><span class="lbl__m">Logo. Mark.</span></figcaption></figure><figure class="tile" style="--ar:0.8000"><button class="tile__frame" type="button" data-lb="po-steel" aria-label="Open No. 029, Only Shri Ram Inox steels"><img src="assets/work/po-steel.webp" width="640" height="800" alt="Only Shri Ram Inox steels, ad creative"></button><figcaption class="lbl"><span class="lbl__no">No. 029</span><span class="lbl__t">Only Shri Ram Inox steels</span><span class="lbl__m">Ad creative. Portrait, 4:5.</span></figcaption></figure></div><div class="wall__col wall__col--4" data-sc-parallax="1.5"><figure class="tile" style="--ar:1.5007"><button class="tile__frame" type="button" data-lb="tt-box" aria-label="Open No. 006, A Tasty Twist takeaway box"><img src="assets/work/tt-box.webp" width="1100" height="733" alt="A Tasty Twist takeaway box, packaging"></button><figcaption class="lbl"><span class="lbl__no">No. 006</span><span class="lbl__t">A Tasty Twist takeaway box</span><span class="lbl__m">Packaging. Landscape.</span></figcaption></figure><figure class="tile" style="--ar:0.8000"><button class="tile__frame" type="button" data-lb="po-onthisday" aria-label="Open No. 033, On this day"><img src="assets/work/po-onthisday.webp" width="880" height="1100" alt="On this day, poster"></button><figcaption class="lbl"><span class="lbl__no">No. 033</span><span class="lbl__t">On this day</span><span class="lbl__m">Poster. Portrait, 4:5.</span></figcaption></figure><figure class="tile" style="--ar:0.8000"><button class="tile__frame" type="button" data-lb="fe-navratri-1" aria-label="Open No. 040, Navratri greeting"><img src="assets/work/fe-navratri-1.webp" width="400" height="500" alt="Navratri greeting, festive post"></button><figcaption class="lbl"><span class="lbl__no">No. 040</span><span class="lbl__t">Navratri greeting</span><span class="lbl__m">Festive post. Portrait, 4:5.</span></figcaption></figure><figure class="tile" style="--ar:0.8000"><button class="tile__frame" type="button" data-lb="po-momos" aria-label="Open No. 030, Your momo’s delightful personality"><img src="assets/work/po-momos.webp" width="640" height="800" alt="Your momo’s delightful personality, poster"></button><figcaption class="lbl"><span class="lbl__no">No. 030</span><span class="lbl__t">Your momo’s delightful personality</span><span class="lbl__m">Poster. Portrait, 4:5.</span></figcaption></figure></div></div>
+  </section>
+
+  <!-- 2 · FEATURED OBJECT. Lotus puff: logo, tube packaging, launch site. -->
+  <section id="lotus-puff" class="feat" data-sc-act="flow" data-room="lotus-puff" aria-labelledby="lp-h">
+    <div class="feat__grid">
+      <figure class="feat__media" data-sc-reveal="left" data-sc-reveal-at="0.1 0.42">
+        <button class="tile__frame" type="button" data-lb="lp-slate" aria-label="Open Lotus puff tube on slate"><img class=feat__img src="assets/work/lp-slate.webp" width="1080" height="1080" alt="Lotus puff tube on slate, packaging" loading="lazy" decoding="async"></button>
+      </figure>
+      <div class="feat__label">
+        <h2 id="lp-h" class="sc-display">Lotus puff</h2>
+        <img class="feat__logo" src="assets/work/lotus-puff-logo-v3.png" width="452" height="174" alt="Lotus puff logo, final version 3">
+        <dl class="facts">
+          <dt>Object</dt><dd>Snack brand: popped makhana (lotus seed)</dd>
+          <dt>Work</dt><dd>Logo, tube packaging, launch website</dd>
+          <dt>Pack</dt><dd>Kimchi &amp; Cream</dd>
+          <dt>Year</dt><dd>2026</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="feat__strip"><figure class="tile tile--feat" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="lp-front" data-fit="cover" aria-label="Open No. 010, Lotus puff Kimchi &amp; Cream tube"><img src="assets/work/lp-front.webp" width="1080" height="1080" alt="Lotus puff Kimchi &amp; Cream tube, packaging" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 010</span><span class="lbl__t">Lotus puff Kimchi &amp; Cream tube</span><span class="lbl__m">Packaging. Square.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="lp-detail" aria-label="Open No. 013, Lotus puff label detail"><img src="assets/work/lp-detail.webp" width="1080" height="1080" alt="Lotus puff label detail, packaging" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 013</span><span class="lbl__t">Lotus puff label detail</span><span class="lbl__m">Packaging. Square.</span></figcaption></figure><figure class="tile tile--site" style="--ar:1.6000"><button class="tile__frame" type="button" data-lb="lp-site-hero" aria-label="Open No. 054, Lotus puff launch site, desktop"><img src="assets/work/lp-site-hero.webp" width="1600" height="1000" alt="Lotus puff launch site, desktop, website ui" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 054</span><span class="lbl__t">Lotus puff launch site, desktop</span><span class="lbl__m">Website UI. Landscape.</span></figcaption></figure><figure class="tile tile--phone" style="--ar:0.4619"><button class="tile__frame" type="button" data-lb="lp-site-m" aria-label="Open No. 055, Lotus puff launch site, phone"><img src="assets/work/lp-site-m.webp" width="739" height="1600" alt="Lotus puff launch site, phone, website ui" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 055</span><span class="lbl__t">Lotus puff launch site, phone</span><span class="lbl__m">Website UI. Story, 9:16.</span></figcaption></figure></div>
+  </section>
+
+  <!-- 3 · THE SORT (peak + signature). The pile on the table sorts itself into
+       a labelled contact sheet by discipline as you scroll. -->
+  <section id="sort" data-sc-act="pin" data-sc-span="3.5" data-room="sort" aria-labelledby="sort-h">
+    <div data-sc-stage>
+      <div class="sort__head">
+        <p class="sc-display sc-display--md sort__pile" data-sc-cue="0 0.3 0 0.45">30 pieces on the table.</p>
+        <div data-sc-cue="0.66 1 0.3 0">
+          <h2 id="sort-h" class="sc-display">Sorted by discipline.</h2>
+          <p class="sort__sub">Pick a pile to walk its room.</p>
+        </div>
+      </div>
+      <div class="sort__field" aria-hidden="true"><div class="st st--plate" data-g="0" data-k="0" data-ar="1.0000"><img src="assets/work/logo-horizon.webp" width="800" height="800" alt="" loading="lazy" decoding="async"></div><div class="st st--plate" data-g="0" data-k="1" data-ar="1.0000"><img src="assets/work/logo-riwaaz.webp" width="800" height="800" alt="" loading="lazy" decoding="async"></div><div class="st st--plate" data-g="0" data-k="2" data-ar="1.0000"><img src="assets/work/logo-examsdojo.webp" width="800" height="800" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="0" data-k="3" data-ar="1.0000"><img src="assets/work/tt-mark.webp" width="1100" height="1100" alt="" loading="lazy" decoding="async"></div><div class="st st--plate" data-g="0" data-k="4" data-ar="2.5977"><img src="assets/work/lotus-puff-logo-v3.png" width="452" height="174" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="1" data-k="0" data-ar="1.5007"><img src="assets/work/tt-box.webp" width="1100" height="733" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="1" data-k="1" data-ar="1.5007"><img src="assets/work/tt-bag.webp" width="1100" height="733" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="1" data-k="2" data-ar="1.5385"><img src="assets/work/tt-stack.webp" width="1100" height="715" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="1" data-k="3" data-ar="1.0000"><img src="assets/work/lp-front.webp" width="1080" height="1080" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="1" data-k="4" data-ar="1.0000"><img src="assets/work/lp-slate.webp" width="1080" height="1080" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="2" data-k="0" data-ar="1.0000"><img src="assets/work/so-roots.webp" width="800" height="800" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="2" data-k="1" data-ar="1.0000"><img src="assets/work/so-canada.webp" width="800" height="800" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="2" data-k="2" data-ar="1.0000"><img src="assets/work/so-australia.webp" width="800" height="800" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="2" data-k="3" data-ar="1.0000"><img src="assets/work/so-uk.webp" width="800" height="800" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="2" data-k="4" data-ar="1.0000"><img src="assets/work/so-steps.webp" width="800" height="800" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="3" data-k="0" data-ar="0.8000"><img src="assets/work/po-baisakhi.webp" width="880" height="1100" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="3" data-k="1" data-ar="0.5627"><img src="assets/work/po-jain.webp" width="619" height="1100" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="3" data-k="2" data-ar="0.8000"><img src="assets/work/po-steel.webp" width="640" height="800" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="3" data-k="3" data-ar="0.8000"><img src="assets/work/po-momos.webp" width="640" height="800" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="3" data-k="4" data-ar="1.0000"><img src="assets/work/po-antivirus.webp" width="800" height="800" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="4" data-k="0" data-ar="0.7068"><img src="assets/work/fe-ganesh-1.webp" width="376" height="532" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="4" data-k="1" data-ar="0.8000"><img src="assets/work/fe-navratri-1.webp" width="400" height="500" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="4" data-k="2" data-ar="0.8000"><img src="assets/work/fe-ganesh-3.webp" width="400" height="500" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="4" data-k="3" data-ar="0.8000"><img src="assets/work/fe-navratri-2.webp" width="400" height="500" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="4" data-k="4" data-ar="0.8000"><img src="assets/work/fe-ganesh-5.webp" width="400" height="500" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="5" data-k="0" data-ar="0.6345"><img src="assets/work/ev-01.webp" width="698" height="1100" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="5" data-k="1" data-ar="0.6345"><img src="assets/work/ev-03.webp" width="698" height="1100" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="5" data-k="2" data-ar="2.2159"><img src="assets/work/web-04.webp" width="1365" height="616" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="5" data-k="3" data-ar="2.3988"><img src="assets/work/web-01.webp" width="1600" height="667" alt="" loading="lazy" decoding="async"></div><div class="st" data-g="5" data-k="4" data-ar="0.5627"><img src="assets/work/reel-03.webp" width="619" height="1100" alt="" loading="lazy" decoding="async"></div></div>
+      <nav class="sort__groups" aria-label="Disciplines"><a class="sg" href="#identity" data-g="0"><span class="sg__name">Identity</span><span class="sg__n">5</span></a><a class="sg" href="#packaging" data-g="1"><span class="sg__name">Packaging</span><span class="sg__n">5</span></a><a class="sg" href="#social" data-g="2"><span class="sg__name">Social</span><span class="sg__n">5</span></a><a class="sg" href="#posters" data-g="3"><span class="sg__name">Posters &amp; ads</span><span class="sg__n">5</span></a><a class="sg" href="#posters" data-g="4"><span class="sg__name">Festive</span><span class="sg__n">5</span></a><a class="sg" href="#screens" data-g="5"><span class="sg__name">Events &amp; web</span><span class="sg__n">5</span></a></nav>
+    </div>
+  </section>
+
+  <!-- 4 · ROOMS. Identity, packaging, social. -->
+  <section class="rooms" data-sc-act="flow" aria-label="Rooms">
+    <div class="room" id="identity" data-room="identity">
+      <header class="room__head"><h2 class="sc-display">Identity</h2>
+        <p class="room__note">Logos and brand marks for construction, fashion, education and food names.</p></header>
+      <div class="grid grid--ident" data-sc-in data-sc-stagger="70"><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="logo-horizon" data-fit="contain" aria-label="Open No. 001, Horizon Demolition &amp; Construction"><img src="assets/work/logo-horizon.webp" width="800" height="800" alt="Horizon Demolition &amp; Construction, logo" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 001</span><span class="lbl__t">Horizon Demolition &amp; Construction</span><span class="lbl__m">Logo. Mark.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="logo-riwaaz" data-fit="contain" aria-label="Open No. 002, Riwaaz Suits"><img src="assets/work/logo-riwaaz.webp" width="800" height="800" alt="Riwaaz Suits, logo" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 002</span><span class="lbl__t">Riwaaz Suits</span><span class="lbl__m">Logo. Mark.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="logo-examsdojo" data-fit="contain" aria-label="Open No. 003, Exams Dojo"><img src="assets/work/logo-examsdojo.webp" width="800" height="800" alt="Exams Dojo, logo" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 003</span><span class="lbl__t">Exams Dojo</span><span class="lbl__m">Logo. Mark.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="tt-mark" data-fit="contain" aria-label="Open No. 004, A Tasty Twist, King of Special Samosa"><img src="assets/work/tt-mark.webp" width="1100" height="1100" alt="A Tasty Twist, King of Special Samosa, brand mark" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 004</span><span class="lbl__t">A Tasty Twist, King of Special Samosa</span><span class="lbl__m">Brand mark. Mark.</span></figcaption></figure><figure class="tile" style="--ar:2.5977"><button class="tile__frame" type="button" data-lb="lotus-puff-logo-v3" data-fit="contain" aria-label="Open No. 005, Lotus puff"><img src="assets/work/lotus-puff-logo-v3.png" width="452" height="174" alt="Lotus puff, logo" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 005</span><span class="lbl__t">Lotus puff</span><span class="lbl__m">Logo. Mark.</span></figcaption></figure></div>
+    </div>
+    <div class="room" id="packaging" data-room="packaging">
+      <header class="room__head"><h2 class="sc-display">Packaging</h2>
+        <p class="room__note">The A Tasty Twist takeaway range, and the Lotus puff tube.</p></header>
+      <div class="grid grid--pack" data-sc-in data-sc-stagger="70"><figure class="tile" style="--ar:1.5007"><button class="tile__frame" type="button" data-lb="tt-box" aria-label="Open No. 006, A Tasty Twist takeaway box"><img src="assets/work/tt-box.webp" width="1100" height="733" alt="A Tasty Twist takeaway box, packaging" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 006</span><span class="lbl__t">A Tasty Twist takeaway box</span><span class="lbl__m">Packaging. Landscape.</span></figcaption></figure><figure class="tile" style="--ar:1.5007"><button class="tile__frame" type="button" data-lb="tt-bag" aria-label="Open No. 007, A Tasty Twist paper bag"><img src="assets/work/tt-bag.webp" width="1100" height="733" alt="A Tasty Twist paper bag, packaging" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 007</span><span class="lbl__t">A Tasty Twist paper bag</span><span class="lbl__m">Packaging. Landscape.</span></figcaption></figure><figure class="tile" style="--ar:1.5385"><button class="tile__frame" type="button" data-lb="tt-stack" aria-label="Open No. 008, A Tasty Twist box set"><img src="assets/work/tt-stack.webp" width="1100" height="715" alt="A Tasty Twist box set, packaging" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 008</span><span class="lbl__t">A Tasty Twist box set</span><span class="lbl__m">Packaging. Landscape.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="tt-launch" aria-label="Open No. 009, Samosa King joins A Tasty Twist"><img src="assets/work/tt-launch.webp" width="800" height="800" alt="Samosa King joins A Tasty Twist, launch post" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 009</span><span class="lbl__t">Samosa King joins A Tasty Twist</span><span class="lbl__m">Launch post. Square.</span></figcaption></figure></div>
+    </div>
+    <div class="room" id="social" data-room="social">
+      <header class="room__head"><h2 class="sc-display">Social</h2>
+        <p class="room__note">Posts under the Starzlink brand: study abroad, immigration, loans.</p></header>
+      <div class="grid grid--social" data-sc-in data-sc-stagger="60"><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="so-cultures" data-sc-tilt="5" aria-label="Open No. 020, Discover new cultures"><img src="assets/work/so-cultures.webp" width="800" height="800" alt="Discover new cultures, social" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 020</span><span class="lbl__t">Discover new cultures</span><span class="lbl__m">Social. Square.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="so-cake" data-sc-tilt="5" aria-label="Open No. 021, A home loan, a piece of cake"><img src="assets/work/so-cake.webp" width="800" height="800" alt="A home loan, a piece of cake, social" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 021</span><span class="lbl__t">A home loan, a piece of cake</span><span class="lbl__m">Social. Square.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="so-fund" data-sc-tilt="5" aria-label="Open No. 023, Fund your future"><img src="assets/work/so-fund.webp" width="800" height="800" alt="Fund your future, social" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 023</span><span class="lbl__t">Fund your future</span><span class="lbl__m">Social. Square.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="so-key" data-sc-tilt="5" aria-label="Open No. 024, Unlock the door to your dreams"><img src="assets/work/so-key.webp" width="800" height="800" alt="Unlock the door to your dreams, social" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 024</span><span class="lbl__t">Unlock the door to your dreams</span><span class="lbl__m">Social. Square.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="so-usa" data-sc-tilt="5" aria-label="Open No. 022, Unlock your future"><img src="assets/work/so-usa.webp" width="800" height="800" alt="Unlock your future, social" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 022</span><span class="lbl__t">Unlock your future</span><span class="lbl__m">Social. Square.</span></figcaption></figure><figure class="tile" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="so-amplify" data-sc-tilt="5" aria-label="Open No. 025, Amplify your knowledge"><img src="assets/work/so-amplify.webp" width="800" height="800" alt="Amplify your knowledge, social" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 025</span><span class="lbl__t">Amplify your knowledge</span><span class="lbl__m">Social. Square.</span></figcaption></figure></div>
+    </div>
+  </section>
+
+  <!-- 5 · THE LONG WALL. Posters, ads, festive, walked sideways. -->
+  <section id="posters" data-sc-act="pan" data-sc-span="2.4" data-room="posters" aria-labelledby="po-h">
+    <div data-sc-stage>
+      <div class="rail" data-sc-pan="0.02">
+        <div class="rail__lead">
+          <h2 id="po-h" class="sc-display">Posters &amp; ads</h2>
+          <p>Product ads, venue and occasion posters, festive greetings. Hung at their real proportions.</p>
+        </div>
+        <figure class="tile tile--rail" style="--ar:0.8000"><button class="tile__frame" type="button" data-lb="po-baisakhi" aria-label="Open No. 026, Happy Baisakhi"><img src="assets/work/po-baisakhi.webp" width="880" height="1100" alt="Happy Baisakhi, poster" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 026</span><span class="lbl__t">Happy Baisakhi</span><span class="lbl__m">Poster. Portrait, 4:5.</span></figcaption></figure><figure class="tile tile--rail" style="--ar:0.5627"><button class="tile__frame" type="button" data-lb="po-royal" aria-label="Open No. 027, Something Royal"><img src="assets/work/po-royal.webp" width="619" height="1100" alt="Something Royal, poster" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 027</span><span class="lbl__t">Something Royal</span><span class="lbl__m">Poster. Story, 9:16.</span></figcaption></figure><figure class="tile tile--rail" style="--ar:0.5627"><button class="tile__frame" type="button" data-lb="po-jain" aria-label="Open No. 028, Snacks that make IPL more interesting"><img src="assets/work/po-jain.webp" width="619" height="1100" alt="Snacks that make IPL more interesting, ad creative" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 028</span><span class="lbl__t">Snacks that make IPL more interesting</span><span class="lbl__m">Ad creative. Story, 9:16.</span></figcaption></figure><figure class="tile tile--rail" style="--ar:0.8000"><button class="tile__frame" type="button" data-lb="po-steel" aria-label="Open No. 029, Only Shri Ram Inox steels"><img src="assets/work/po-steel.webp" width="640" height="800" alt="Only Shri Ram Inox steels, ad creative" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 029</span><span class="lbl__t">Only Shri Ram Inox steels</span><span class="lbl__m">Ad creative. Portrait, 4:5.</span></figcaption></figure><figure class="tile tile--rail" style="--ar:0.8000"><button class="tile__frame" type="button" data-lb="po-momos" aria-label="Open No. 030, Your momo’s delightful personality"><img src="assets/work/po-momos.webp" width="640" height="800" alt="Your momo’s delightful personality, poster" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 030</span><span class="lbl__t">Your momo’s delightful personality</span><span class="lbl__m">Poster. Portrait, 4:5.</span></figcaption></figure><figure class="tile tile--rail" style="--ar:1.0000"><button class="tile__frame" type="button" data-lb="po-antivirus" aria-label="Open No. 032, Antivirus = Cybersecurity"><img src="assets/work/po-antivirus.webp" width="800" height="800" alt="Antivirus = Cybersecurity, ad creative" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 032</span><span class="lbl__t">Antivirus = Cybersecurity</span><span class="lbl__m">Ad creative. Square.</span></figcaption></figure><figure class="tile tile--rail" style="--ar:0.8000"><button class="tile__frame" type="button" data-lb="po-onthisday" aria-label="Open No. 033, On this day"><img src="assets/work/po-onthisday.webp" width="880" height="1100" alt="On this day, poster" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 033</span><span class="lbl__t">On this day</span><span class="lbl__m">Poster. Portrait, 4:5.</span></figcaption></figure><figure class="tile tile--rail" style="--ar:0.5627"><button class="tile__frame" type="button" data-lb="po-occasion" aria-label="Open No. 034, Make every occasion feel grand"><img src="assets/work/po-occasion.webp" width="619" height="1100" alt="Make every occasion feel grand, poster" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 034</span><span class="lbl__t">Make every occasion feel grand</span><span class="lbl__m">Poster. Story, 9:16.</span></figcaption></figure><div class="rail__card rail__card--fest"><p class="rail__kicker">Festive</p><p class="rail__note">Greetings for Ganesh Chaturthi and Navratri, from Amit’s Canva account.</p></div><figure class="tile tile--rail tile--fest" style="--ar:0.7068"><button class="tile__frame" type="button" data-lb="fe-ganesh-1" aria-label="Open No. 039, Ganesh Chaturthi"><img src="assets/work/fe-ganesh-1.webp" width="376" height="532" alt="Ganesh Chaturthi, festive poster" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 039</span><span class="lbl__t">Ganesh Chaturthi</span><span class="lbl__m">Festive poster. Portrait, 4:5.</span></figcaption></figure><figure class="tile tile--rail tile--fest" style="--ar:0.8000"><button class="tile__frame" type="button" data-lb="fe-navratri-1" aria-label="Open No. 040, Navratri greeting"><img src="assets/work/fe-navratri-1.webp" width="400" height="500" alt="Navratri greeting, festive post" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 040</span><span class="lbl__t">Navratri greeting</span><span class="lbl__m">Festive post. Portrait, 4:5.</span></figcaption></figure><figure class="tile tile--rail tile--fest" style="--ar:0.8000"><button class="tile__frame" type="button" data-lb="fe-ganesh-3" aria-label="Open No. 041, Ganpati Bappa Morya"><img src="assets/work/fe-ganesh-3.webp" width="400" height="500" alt="Ganpati Bappa Morya, festive post" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 041</span><span class="lbl__t">Ganpati Bappa Morya</span><span class="lbl__m">Festive post. Portrait, 4:5.</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · SCREENS. UI is the second string: banners, a launch site, app screens. -->
+  <section id="screens" class="screens" data-sc-act="flow" data-room="screens" aria-labelledby="sc-h">
+    <div>
+      <header class="room__head"><h2 id="sc-h" class="sc-display">Screens</h2>
+        <p class="room__note">Web banners, a launch site, app and web UI.</p></header>
+      <div class="grid grid--screens" data-sc-in data-sc-stagger="70">
+        <figure class="tile tile--banner" style="--ar:2.2159"><button class="tile__frame" type="button" data-lb="web-04" aria-label="Open No. 053, Maha Solar Expo 2024"><img src="assets/work/web-04.webp" width="1365" height="616" alt="Maha Solar Expo 2024, web banner" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 053</span><span class="lbl__t">Maha Solar Expo 2024</span><span class="lbl__m">Web banner. Banner.</span></figcaption></figure><figure class="tile tile--banner" style="--ar:2.3988"><button class="tile__frame" type="button" data-lb="web-01" aria-label="Open No. 050, Epitome event banner"><img src="assets/work/web-01.webp" width="1600" height="667" alt="Epitome event banner, web banner" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 050</span><span class="lbl__t">Epitome event banner</span><span class="lbl__m">Web banner. Banner.</span></figcaption></figure><figure class="tile tile--site" style="--ar:1.6000"><button class="tile__frame" type="button" data-lb="lp-site-hero" aria-label="Open No. 054, Lotus puff launch site, desktop"><img src="assets/work/lp-site-hero.webp" width="1600" height="1000" alt="Lotus puff launch site, desktop, website ui" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 054</span><span class="lbl__t">Lotus puff launch site, desktop</span><span class="lbl__m">Website UI. Landscape.</span></figcaption></figure><figure class="tile tile--phone" style="--ar:0.4619"><button class="tile__frame" type="button" data-lb="lp-site-m" aria-label="Open No. 055, Lotus puff launch site, phone"><img src="assets/work/lp-site-m.webp" width="739" height="1600" alt="Lotus puff launch site, phone, website ui" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 055</span><span class="lbl__t">Lotus puff launch site, phone</span><span class="lbl__m">Website UI. Story, 9:16.</span></figcaption></figure>
+        <div class="tbcs">
+          <div class="tbc"><span class="tbc__tag">Visuals TBC</span>
+            <p class="lbl"><span class="lbl__no">No. TBC</span><span class="lbl__t">MyChamp11, fantasy cricket app</span><span>Mobile app UI. Screens TBC.</span></p></div>
+          <div class="tbc"><span class="tbc__tag">Visuals TBC</span>
+            <p class="lbl"><span class="lbl__no">No. TBC</span><span class="lbl__t">Website landing and internal pages</span><span>Website UI. Project title TBC.</span></p></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="sub__h"><h3>Events &amp; motion</h3><p>Event creatives for Epitome, then short vertical reels. Muted; tap a reel to pause.</p></div>
+      <div class="grid grid--em" data-sc-in data-sc-stagger="60"><figure class="tile" style="--ar:0.6345"><button class="tile__frame" type="button" data-lb="ev-01" aria-label="Open No. 046, Epitome × Indesa, 23 March"><img src="assets/work/ev-01.webp" width="698" height="1100" alt="Epitome × Indesa, 23 March, event creative" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 046</span><span class="lbl__t">Epitome × Indesa, 23 March</span><span class="lbl__m">Event creative. Story, 9:16.</span></figcaption></figure><figure class="tile" style="--ar:0.6345"><button class="tile__frame" type="button" data-lb="ev-02" aria-label="Open No. 047, Epitome, 23 March"><img src="assets/work/ev-02.webp" width="698" height="1100" alt="Epitome, 23 March, event creative" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 047</span><span class="lbl__t">Epitome, 23 March</span><span class="lbl__m">Event creative. Story, 9:16.</span></figcaption></figure><figure class="tile" style="--ar:0.6345"><button class="tile__frame" type="button" data-lb="ev-03" aria-label="Open No. 048, Epitome × Indesa, 23 March"><img src="assets/work/ev-03.webp" width="698" height="1100" alt="Epitome × Indesa, 23 March, event creative" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 048</span><span class="lbl__t">Epitome × Indesa, 23 March</span><span class="lbl__m">Event creative. Story, 9:16.</span></figcaption></figure><figure class="tile" style="--ar:0.6345"><button class="tile__frame" type="button" data-lb="ev-04" aria-label="Open No. 049, Epitome × Tarot, 23 March"><img src="assets/work/ev-04.webp" width="698" height="1100" alt="Epitome × Tarot, 23 March, event creative" loading="lazy" decoding="async"></button><figcaption class="lbl"><span class="lbl__no">No. 049</span><span class="lbl__t">Epitome × Tarot, 23 March</span><span class="lbl__m">Event creative. Story, 9:16.</span></figcaption></figure><figure class="reel"><div class="reel__frame"><video muted loop playsinline preload="none" poster="assets/work/reel-01.webp" data-reel aria-label="Laundry brand reel"><source src="assets/reels/reel-01.mp4" type="video/mp4"></video><button class="reel__play" type="button" aria-label="Play Laundry brand reel"></button></div><figcaption class="lbl"><span class="lbl__no">No. 056</span><span class="lbl__t">Laundry brand reel</span><span class="lbl__m">Reel. Vertical video, 9:16.</span></figcaption></figure><figure class="reel"><div class="reel__frame"><video muted loop playsinline preload="none" poster="assets/work/reel-02.webp" data-reel aria-label="Laundry promo reel"><source src="assets/reels/reel-02.mp4" type="video/mp4"></video><button class="reel__play" type="button" aria-label="Play Laundry promo reel"></button></div><figcaption class="lbl"><span class="lbl__no">No. 057</span><span class="lbl__t">Laundry promo reel</span><span class="lbl__m">Reel. Vertical video, 9:16.</span></figcaption></figure><figure class="reel"><div class="reel__frame"><video muted loop playsinline preload="none" poster="assets/work/reel-03.webp" data-reel aria-label="Laundry service reel"><source src="assets/reels/reel-03.mp4" type="video/mp4"></video><button class="reel__play" type="button" aria-label="Play Laundry service reel"></button></div><figcaption class="lbl"><span class="lbl__no">No. 058</span><span class="lbl__t">Laundry service reel</span><span class="lbl__m">Reel. Vertical video, 9:16.</span></figcaption></figure><figure class="reel"><div class="reel__frame"><video muted loop playsinline preload="none" poster="assets/work/reel-04.webp" data-reel aria-label="Carpet cleaning reel"><source src="assets/reels/reel-04.mp4" type="video/mp4"></video><button class="reel__play" type="button" aria-label="Play Carpet cleaning reel"></button></div><figcaption class="lbl"><span class="lbl__no">No. 059</span><span class="lbl__t">Carpet cleaning reel</span><span class="lbl__m">Reel. Vertical video, 9:16.</span></figcaption></figure><figure class="reel"><div class="reel__frame"><video muted loop playsinline preload="none" poster="assets/work/reel-05.webp" data-reel aria-label="Website promo reel"><source src="assets/reels/reel-05.mp4" type="video/mp4"></video><button class="reel__play" type="button" aria-label="Play Website promo reel"></button></div><figcaption class="lbl"><span class="lbl__no">No. 060</span><span class="lbl__t">Website promo reel</span><span class="lbl__m">Reel. Vertical video, 9:16.</span></figcaption></figure></div>
+    </div>
+  </section>
+
+  <!-- 7 · INQUIRE. The next object in the collection is a frame left empty. -->
+  <section id="inquire" class="close" data-sc-act="flow" data-room="inquire" aria-labelledby="ask-h">
+    <figure class="ask">
+      <div class="ask__frame" data-sc-reveal="down" data-sc-reveal-at="0.06 0.34">
+        <h2 id="ask-h" class="sc-display">Your brief<br>goes here.</h2>
+        <div class="ask__row">
+          <a class="ask__mail" href="mailto:amitkashyap777999@gmail.com?subject=Design%20brief">amitkashyap777999@gmail.com</a>
+          <button class="copy" type="button" data-copy="amitkashyap777999@gmail.com">Copy email</button>
+          <span class="copy__msg" role="status" aria-live="polite"></span>
+        </div>
+      </div>
+      <figcaption class="lbl"><span class="lbl__no">No. 061</span><span class="lbl__t">Your project</span><span>Discipline open. Format open.</span></figcaption>
+    </figure>
+    <aside class="maker" aria-labelledby="mk-h">
+      <h2 id="mk-h" class="sc-display">The maker</h2>
+      <p>Amit designs clear, bold visuals for social feeds, brands, websites and apps, including AI-generated visual content. Full-time and freelance, much of it remote.</p>
+      <dl class="facts">
+        <dt>Name</dt><dd>Amit Kashyap</dd>
+        <dt>Based</dt><dd>Ludhiana, India</dd>
+        <dt>Tools</dt><dd>Photoshop, Illustrator, Figma, Canva, AI tools</dd>
+        <dt>Portfolio</dt><dd><a href="https://amitkashyap.my.canva.site" rel="noopener">amitkashyap.my.canva.site</a></dd>
+      </dl>
+      <ol class="xp" aria-label="Experience, from Amit's CV">
+        <li><b>GrizonTech</b><span>Aug 2024 to Dec 2025</span><i>Graphic &amp; Web UI Designer, remote</i></li>
+        <li><b>Starzlink Corporation</b><span>Aug 2023 to Aug 2024</span><i>Creative Graphic Designer</i></li>
+        <li><b>Digital Handlers India</b><span>Feb 2023 to Jul 2023</span><i>Graphic Designer</i></li>
+        <li><b>VPro Infotech</b><span>Jun 2022 to Dec 2022</span><i>Graphic Designer</i></li>
+        <li><b>TTC Robotronics</b><span>Apr 2022 to Jun 2022</span><i>Graphic Designer</i></li>
+        <li><b>Media Vox</b><span>Feb 2020 to May 2020</span><i>Graphic Designer</i></li>
+      </ol>
+      <div class="portrait">Portrait TBC</div>
+    </aside>
+    <footer class="foot">
+      <span>Amit Kashyap, graphic designer. Ludhiana, India.</span>
+      <span>All work shown is Amit&rsquo;s own design. Brand names belong to their owners.</span>
+    </footer>
+  </section>
+</main>
+
+<dialog class="lb" id="lb" aria-label="Work viewer">
+  <button class="lb__x" type="button" data-lb-close>Close</button>
+  <figure><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=">
+    <figcaption class="lbl"><span class="lbl__no"></span><span class="lbl__t"></span><span class="lbl__m"></span></figcaption></figure>
+</dialog>
+
+<script src="scrollcraft.js"></script>
+<script>ScrollCraft.mount(document.body);</script>
+<script>
+(function () {
+  var R = ScrollCraft.reduce, root = document.documentElement;
+  if (R) root.classList.add('ap-reduce');
+  var LB = {"logo-horizon": ["assets/work/logo-horizon.webp", "001", "Horizon Demolition & Construction", "Logo. Mark.", 800, 800], "logo-riwaaz": ["assets/work/logo-riwaaz.webp", "002", "Riwaaz Suits", "Logo. Mark.", 800, 800], "logo-examsdojo": ["assets/work/logo-examsdojo.webp", "003", "Exams Dojo", "Logo. Mark.", 800, 800], "tt-mark": ["assets/work/tt-mark.webp", "004", "A Tasty Twist, King of Special Samosa", "Brand mark. Mark.", 1100, 1100], "lotus-puff-logo-v3": ["assets/work/lotus-puff-logo-v3.png", "005", "Lotus puff", "Logo. Mark.", 452, 174], "tt-box": ["assets/work/tt-box.webp", "006", "A Tasty Twist takeaway box", "Packaging. Landscape.", 1100, 733], "tt-bag": ["assets/work/tt-bag.webp", "007", "A Tasty Twist paper bag", "Packaging. Landscape.", 1100, 733], "tt-stack": ["assets/work/tt-stack.webp", "008", "A Tasty Twist box set", "Packaging. Landscape.", 1100, 715], "tt-launch": ["assets/work/tt-launch.webp", "009", "Samosa King joins A Tasty Twist", "Launch post. Square.", 800, 800], "lp-front": ["assets/work/lp-front.webp", "010", "Lotus puff Kimchi & Cream tube", "Packaging. Square.", 1080, 1080], "lp-peach": ["assets/work/lp-peach.webp", "011", "Lotus puff tube, three-quarter", "Packaging. Square.", 1080, 1080], "lp-slate": ["assets/work/lp-slate.webp", "012", "Lotus puff tube on slate", "Packaging. Square.", 1080, 1080], "lp-detail": ["assets/work/lp-detail.webp", "013", "Lotus puff label detail", "Packaging. Square.", 1080, 1080], "lp-cafe": ["assets/work/lp-cafe.webp", "014", "Lotus puff in a cafe setting", "Packaging. Square.", 1080, 1080], "so-roots": ["assets/work/so-roots.webp", "015", "Roots across borders", "Social. Square.", 800, 800], "so-canada": ["assets/work/so-canada.webp", "016", "Trusted experts for Canadian immigration", "Social. Square.", 800, 800], "so-australia": ["assets/work/so-australia.webp", "017", "Your dream to study in Australia", "Social. Square.", 800, 800], "so-uk": ["assets/work/so-uk.webp", "018", "Study in the UK", "Social. Square.", 800, 800], "so-steps": ["assets/work/so-steps.webp", "019", "Affordable steps to a limitless future", "Social. Square.", 800, 800], "so-cultures": ["assets/work/so-cultures.webp", "020", "Discover new cultures", "Social. Square.", 800, 800], "so-cake": ["assets/work/so-cake.webp", "021", "A home loan, a piece of cake", "Social. Square.", 800, 800], "so-usa": ["assets/work/so-usa.webp", "022", "Unlock your future", "Social. Square.", 800, 800], "so-fund": ["assets/work/so-fund.webp", "023", "Fund your future", "Social. Square.", 800, 800], "so-key": ["assets/work/so-key.webp", "024", "Unlock the door to your dreams", "Social. Square.", 800, 800], "so-amplify": ["assets/work/so-amplify.webp", "025", "Amplify your knowledge", "Social. Square.", 800, 800], "po-baisakhi": ["assets/work/po-baisakhi.webp", "026", "Happy Baisakhi", "Poster. Portrait, 4:5.", 880, 1100], "po-royal": ["assets/work/po-royal.webp", "027", "Something Royal", "Poster. Story, 9:16.", 619, 1100], "po-jain": ["assets/work/po-jain.webp", "028", "Snacks that make IPL more interesting", "Ad creative. Story, 9:16.", 619, 1100], "po-steel": ["assets/work/po-steel.webp", "029", "Only Shri Ram Inox steels", "Ad creative. Portrait, 4:5.", 640, 800], "po-momos": ["assets/work/po-momos.webp", "030", "Your momo’s delightful personality", "Poster. Portrait, 4:5.", 640, 800], "po-essential": ["assets/work/po-essential.webp", "031", "A daily essential for all your meals", "Ad creative. Story, 9:16.", 533, 800], "po-antivirus": ["assets/work/po-antivirus.webp", "032", "Antivirus = Cybersecurity", "Ad creative. Square.", 800, 800], "po-onthisday": ["assets/work/po-onthisday.webp", "033", "On this day", "Poster. Portrait, 4:5.", 880, 1100], "po-occasion": ["assets/work/po-occasion.webp", "034", "Make every occasion feel grand", "Poster. Story, 9:16.", 619, 1100], "po-baadmein": ["assets/work/po-baadmein.webp", "035", "Baad mein?", "Poster. Portrait, 4:5.", 880, 1100], "po-laundry": ["assets/work/po-laundry.webp", "036", "Your time is precious", "Ad creative. Square.", 800, 800], "po-parachute": ["assets/work/po-parachute.webp", "037", "Quality delivered to your doorstep", "Ad creative. Portrait, 4:5.", 880, 1100], "po-curtains": ["assets/work/po-curtains.webp", "038", "Fresh curtains, fresher home", "Ad creative. Square.", 800, 800], "fe-ganesh-1": ["assets/work/fe-ganesh-1.webp", "039", "Ganesh Chaturthi", "Festive poster. Portrait, 4:5.", 376, 532], "fe-navratri-1": ["assets/work/fe-navratri-1.webp", "040", "Navratri greeting", "Festive post. Portrait, 4:5.", 400, 500], "fe-ganesh-3": ["assets/work/fe-ganesh-3.webp", "041", "Ganpati Bappa Morya", "Festive post. Portrait, 4:5.", 400, 500], "fe-navratri-2": ["assets/work/fe-navratri-2.webp", "042", "Shubh Navratri", "Festive post. Portrait, 4:5.", 400, 500], "fe-ganesh-4": ["assets/work/fe-ganesh-4.webp", "043", "Ganesh Chaturthi greeting", "Festive poster. Portrait, 4:5.", 376, 532], "fe-ganesh-5": ["assets/work/fe-ganesh-5.webp", "044", "Ganpati Bappa Morya", "Festive post. Portrait, 4:5.", 400, 500], "fe-navratri-3": ["assets/work/fe-navratri-3.webp", "045", "Shubh Navratri", "Festive post. Portrait, 4:5.", 400, 500], "ev-01": ["assets/work/ev-01.webp", "046", "Epitome × Indesa, 23 March", "Event creative. Story, 9:16.", 698, 1100], "ev-02": ["assets/work/ev-02.webp", "047", "Epitome, 23 March", "Event creative. Story, 9:16.", 698, 1100], "ev-03": ["assets/work/ev-03.webp", "048", "Epitome × Indesa, 23 March", "Event creative. Story, 9:16.", 698, 1100], "ev-04": ["assets/work/ev-04.webp", "049", "Epitome × Tarot, 23 March", "Event creative. Story, 9:16.", 698, 1100], "web-01": ["assets/work/web-01.webp", "050", "Epitome event banner", "Web banner. Banner.", 1600, 667], "web-02": ["assets/work/web-02.webp", "051", "Epitome event banner", "Web banner. Banner.", 1600, 667], "web-03": ["assets/work/web-03.webp", "052", "Epitome event banner", "Web banner. Banner.", 1600, 667], "web-04": ["assets/work/web-04.webp", "053", "Maha Solar Expo 2024", "Web banner. Banner.", 1365, 616], "lp-site-hero": ["assets/work/lp-site-hero.webp", "054", "Lotus puff launch site, desktop", "Website UI. Landscape.", 1600, 1000], "lp-site-m": ["assets/work/lp-site-m.webp", "055", "Lotus puff launch site, phone", "Website UI. Story, 9:16.", 739, 1600], "reel-01": ["assets/work/reel-01.webp", "056", "Laundry brand reel", "Reel. Vertical video, 9:16.", 619, 1100], "reel-02": ["assets/work/reel-02.webp", "057", "Laundry promo reel", "Reel. Vertical video, 9:16.", 619, 1100], "reel-03": ["assets/work/reel-03.webp", "058", "Laundry service reel", "Reel. Vertical video, 9:16.", 619, 1100], "reel-04": ["assets/work/reel-04.webp", "059", "Carpet cleaning reel", "Reel. Vertical video, 9:16.", 619, 1100], "reel-05": ["assets/work/reel-05.webp", "060", "Website promo reel", "Reel. Vertical video, 9:16.", 619, 1100]};
+  var clamp = function (v) { return v < 0 ? 0 : v > 1 ? 1 : v; };
+  var ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+
+  /* ---------------- signature: the sort ------------------------------- */
+  var act = document.getElementById('sort');
+  var stage = act.querySelector('[data-sc-stage]');
+  var tiles = [].slice.call(stage.querySelectorAll('.st'));
+  var heads = [].slice.call(stage.querySelectorAll('.sg'));
+  var lastP = -1;
+  function rnd(i) { var x = Math.sin(i * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); }
+  function layout() {
+    var W = stage.clientWidth, H = stage.clientHeight, mob = W < 760;
+    var cols = mob ? 3 : 6, rows = mob ? 2 : 1;
+    var mx = mob ? 16 : Math.max(28, W * 0.034);
+    var top0 = mob ? H * 0.27 : H * 0.27, bot = mob ? 100 : 110;
+    var g = mob ? 10 : 20, gi = mob ? 4 : 8, hh = mob ? 30 : 36, rg = mob ? 18 : 0;
+    var gw = (W - 2 * mx - (cols - 1) * g) / cols;
+    var cell = (gw - gi) / 2;
+    var gh = function (c) { return hh + 3 * c + 2 * gi; };
+    while (rows * gh(cell) + (rows - 1) * rg > H - top0 - bot && cell > 24) cell -= 2;
+    var top = Math.max(top0, (top0 + H - bot) / 2 - (rows * gh(cell) + (rows - 1) * rg) / 2);
+    var pileW = mob ? W * 0.34 : Math.min(W * 0.14, 250);
+    var groups = [];
+    for (var q = 0; q < 6; q++) {
+      var c = q % cols, r = Math.floor(q / cols);
+      groups.push({ x: mx + c * (gw + g), y: top + r * (gh(cell) + rg), w: gw });
+    }
+    tiles.forEach(function (el, i) {
+      var gI = +el.dataset.g, k = +el.dataset.k, ar = +el.dataset.ar;
+      var w0 = pileW, h0 = w0 / ar;
+      if (h0 > pileW * 1.45) { h0 = pileW * 1.45; w0 = h0 * ar; }
+      el.style.width = w0.toFixed(1) + 'px'; el.style.height = h0.toFixed(1) + 'px';
+      var G = groups[gI];
+      var cx = G.x + (k % 2) * (cell + gi) + cell / 2;
+      var cy = G.y + hh + Math.floor(k / 2) * (cell + gi) + cell / 2;
+      el._a = {
+        px: W * 0.5 + (rnd(i) - 0.5) * W * (mob ? 0.62 : 0.64),
+        py: H * (mob ? 0.62 : 0.6) + (rnd(i + 40) - 0.5) * H * (mob ? 0.36 : 0.42),
+        r0: (rnd(i + 90) - 0.5) * 36,
+        cx: cx, cy: cy, s1: Math.min(cell / w0, cell / h0), w0: w0, h0: h0,
+        start: 0.1 + gI * 0.085 + k * 0.016
+      };
+      el.style.zIndex = String(1 + Math.floor(rnd(i + 7) * 30));
+    });
+    heads.forEach(function (h) {
+      var G = groups[+h.dataset.g];
+      h.style.transform = 'translate3d(' + G.x.toFixed(1) + 'px,' + G.y.toFixed(1) + 'px,0)';
+      h.style.width = G.w.toFixed(1) + 'px';
+      h.style.setProperty('--cell', cell.toFixed(1) + 'px');
+      h.style.setProperty('--gi', gi + 'px');
+      h.style.setProperty('--hh', hh + 'px');
+    });
+    lastP = -1;
+  }
+  function draw(p) {
+    for (var i = 0; i < tiles.length; i++) {
+      var el = tiles[i], a = el._a;
+      var t = ease(clamp((p - a.start) / 0.17));
+      var x = a.px + (a.cx - a.px) * t, y = a.py + (a.cy - a.py) * t;
+      var s = 1 + (a.s1 - 1) * t, r = a.r0 * (1 - t);
+      el.style.transform = 'translate3d(' + (x - a.w0 / 2).toFixed(1) + 'px,' + (y - a.h0 / 2).toFixed(1) + 'px,0) rotate(' + r.toFixed(2) + 'deg) scale(' + s.toFixed(4) + ')';
+    }
+    for (var j = 0; j < heads.length; j++) {
+      var g = +heads[j].dataset.g;
+      var o = clamp((p - (0.2 + g * 0.085)) / 0.08);
+      heads[j].style.opacity = o.toFixed(3);
+      heads[j].style.pointerEvents = o > 0.5 ? 'auto' : 'none';
+      heads[j].tabIndex = o > 0.5 ? 0 : -1;
+    }
+  }
+  function tick() {
+    var p = R ? 1 : (parseFloat(act.style.getPropertyValue('--sc-p')) || 0);
+    if (Math.abs(p - lastP) > 0.0004) { draw(p); lastP = p; }
+    if (!R) requestAnimationFrame(tick);
+  }
+  layout(); tick();
+  var rt; addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { layout(); if (R) draw(1); }, 120); });
+
+  /* ---------------- lightbox ----------------------------------------- */
+  var dlg = document.getElementById('lb'), dImg = dlg.querySelector('img'), opener = null;
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-lb]');
+    if (b) {
+      var d = LB[b.getAttribute('data-lb')]; if (!d) return;
+      dImg.src = d[0]; dImg.width = d[4]; dImg.height = d[5]; dImg.alt = d[2];
+      dlg.querySelector('.lbl__no').textContent = 'No. ' + d[1];
+      dlg.querySelector('.lbl__t').textContent = d[2];
+      dlg.querySelector('.lbl__m').textContent = d[3];
+      opener = b; dlg.showModal(); return;
+    }
+    if (e.target === dlg || e.target.closest('[data-lb-close]')) dlg.close();
+  });
+  dlg.addEventListener('close', function () { if (opener) opener.focus({ preventScroll: true }); });
+
+  /* ---------------- index: mark the room in view ---------------------- */
+  var links = {};
+  [].forEach.call(document.querySelectorAll('.ix__l'), function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  var current = null;
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var id = e.target.getAttribute('data-room');
+      if (id === 'sort') id = null;
+      if (id === 'wall') id = null;
+      if (current) current.removeAttribute('aria-current');
+      current = id && links[id] ? links[id] : null;
+      if (current) { current.setAttribute('aria-current', 'true'); current.scrollIntoView({ block: 'nearest', inline: 'nearest' }); }
+    });
+  }, { rootMargin: '-48% 0px -48% 0px' });
+  [].forEach.call(document.querySelectorAll('[data-room]'), function (s) { io.observe(s); });
+
+  /* ---------------- reels -------------------------------------------- */
+  [].forEach.call(document.querySelectorAll('.reel'), function (fig) {
+    var v = fig.querySelector('video'), b = fig.querySelector('.reel__play');
+    var user = false;
+    var play = function () { v.play().then(function () { fig.classList.add('is-playing'); }).catch(function () {}); };
+    var stop = function () { v.pause(); fig.classList.remove('is-playing'); };
+    b.addEventListener('click', function () { user = true; if (v.paused) play(); else stop(); });
+    if (!R) new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting && !user) play(); else if (!e.isIntersecting) stop(); });
+    }, { threshold: 0.6 }).observe(v);
+  });
+
+  /* ---------------- copy email --------------------------------------- */
+  [].forEach.call(document.querySelectorAll('[data-copy]'), function (b) {
+    b.addEventListener('click', function () {
+      var msg = b.parentNode.querySelector('.copy__msg');
+      var done = function (t) { if (msg) msg.textContent = t; };
+      if (navigator.clipboard) navigator.clipboard.writeText(b.getAttribute('data-copy')).then(function () { done('Copied'); }, function () { done('Select the address to copy'); });
+      else done('Select the address to copy');
+    });
+  });
+})();
+</script>
+</body>
+</html>
